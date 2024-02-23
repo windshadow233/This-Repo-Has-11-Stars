@@ -27,7 +27,7 @@ def lambda_handler(event, context):
             'statusCode': 401,
             'body': 'Bad signature'
         }
-    if path == "/":
+    if path == "/this-repo-has-n-star":
         # https://docs.github.com/en/developers/webhooks-and-events/webhook-events-and-payloads#star
         payload = json.loads(body)
         repository = payload['repository']
