@@ -25,7 +25,7 @@ def lambda_handler(event, context):
     if hashsum != signature:
         return {
             'statusCode': 401,
-            'body': json.dumps({'hashsum': hashsum, 'signature': signature})
+            'body': 'Bad signature'
         }
     if path == "/":
         # https://docs.github.com/en/developers/webhooks-and-events/webhook-events-and-payloads#star
