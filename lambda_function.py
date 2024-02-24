@@ -51,7 +51,7 @@ def lambda_handler(event, context):
         # Update stargazers
         stargazers_url = repository_url + "/stargazers"
         res = requests.get(stargazers_url, headers={'Accept': 'application/vnd.github.v3.star+json', 'Authorization': f"Bearer {GITHUB_TOKEN}"}).json()
-        lines.append("下表记录了Star了此项目的用户们:")
+        lines.append("下表记录了Star了此Repo的用户们:")
         table = "| No. | Avatar | Username | Starred At |\n" \
                 "| :---: | :---: | :---: | :---: |"
         for i, info in enumerate(res):
