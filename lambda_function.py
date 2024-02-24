@@ -8,7 +8,6 @@ import requests
 
 
 GITHUB_TOKEN = os.environ.get('GITHUB_TOKEN')
-SECRET = os.environ.get('SECRET')
 
 
 def lambda_handler(event, context):
@@ -21,13 +20,14 @@ def lambda_handler(event, context):
     else:
         body = b""
     signature = event['headers']['x-hub-signature-256'].split("=")[1]
-    hashsum = hmac.new(SECRET.encode(), msg=body, digestmod=hashlib.sha256).hexdigest()
-    if hashsum != signature:
-        return {
-            'statusCode': 401,
-            'body': 'Bad signature'
-        }
     if path == "/this-repo-has-n-stars":
+        secret = os.environ.get('SECRET')
+        hashsum = hmac.new(secret.encode(), msg=body, digestmod=hashlib.sha256).hexdigest()
+        if hashsum != signature:
+            return {
+                'statusCode': 401,
+                'body': 'Bad signature'
+            }
         # https://docs.github.com/en/developers/webhooks-and-events/webhook-events-and-payloads#star
         payload = json.loads(body)
         repository = payload['repository']
