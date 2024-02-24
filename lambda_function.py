@@ -41,7 +41,22 @@ def lambda_handler(event, context):
             'name': new_name,
             'description': new_description
         }
-        response = requests.patch(repository_url, headers=headers, json=data)
+        requests.patch(repository_url, headers=headers, json=data)
+
+        readme_url = repository_url + '/contents/README.md'
+        res = requests.get(readme_url, headers=headers)
+        content = base64.b64decode(res.json()['content']).decode()
+        lines = content.split('\n\n')
+        lines[0] = f"# It's True 💗 This Repo Has {stars} Stars!"
+        new_content = '\n\n'.join(lines)
+        encoded_content = base64.b64encode(new_content.encode()).decode()
+        sha = res.json()['sha']
+        data = {
+            "message": f"Update star count to {stars}",
+            "content": encoded_content,
+            "sha": sha
+        }
+        response = requests.put(readme_url, json=data, headers=headers)
         return {'statusCode': response.status_code, 'body': "OK"}
     else:
         return {'statusCode': 404, 'body': ""}
