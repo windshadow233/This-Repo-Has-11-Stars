@@ -47,7 +47,7 @@ def lambda_handler(event, context):
         res = requests.get(readme_url, headers=headers)
         content = base64.b64decode(res.json()['content']).decode()
         lines = content.split('\n\n')
-        lines[0] = f"# It's True 💗 This Repo Has {stars} Stars!"
+        lines[0] = f"# It's True 💗 This Repo Has {stars} Star{'s' if stars != 1 else ''}!"
         new_content = '\n\n'.join(lines)
         encoded_content = base64.b64encode(new_content.encode()).decode()
         sha = res.json()['sha']
