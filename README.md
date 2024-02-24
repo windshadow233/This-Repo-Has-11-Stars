@@ -1,4 +1,4 @@
-# It's True 💗 This Repo Has 3 Stars!
+# It's True 💗 This Repo Has 2 Stars!
 
 很早以前看到过@iBug大佬的[项目](https://github.com/iBug/This-Repo-Has-572-Stars)，当时觉得真有趣，但没仔细学习。今天偶然想起，于是拜读了一下[ibug.io/p/41](https://ibug.io/p/41)，
 并复现了一个出来。
@@ -9,6 +9,5 @@
 
 | No. | Avatar | Username | Starred At |
 | :---: | :---: | :---: | :---: |
-| 2 | <img src='https://avatars.githubusercontent.com/u/50669888?v=4' width='50'> | windshadow233 | 2024-02-24T18:01:47Z |
 | 1 | <img src='https://avatars.githubusercontent.com/u/147902813?v=4' width='50'> | cjwsjtu | 2024-02-24T07:44:34Z |
 | 0 | <img src='https://avatars.githubusercontent.com/u/34061588?v=4' width='50'> | May24th | 2024-02-24T04:33:35Z |
