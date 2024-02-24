@@ -54,10 +54,9 @@ def lambda_handler(event, context):
         lines.append("下表记录了Star了此项目的用户们:")
         table = "| No. | Avatar | Username | Starred At |\n" \
                 "| :---: | :---: | :---: | :---: |"
-        total = len(res)
-        for i, info in enumerate(res[::-1], 1):
+        for i, info in enumerate(res):
             user = info['user']
-            table += f"\n| {total - i} | <img src='{user['avatar_url']}' width='50'> | {user['login']} | {info['starred_at']} |"
+            table += f"\n| {i} | <img src='{user['avatar_url']}' width='50'> | {user['login']} | {info['starred_at']} |"
         lines.append(table)
         new_content = '\n\n'.join(lines)
         encoded_content = base64.b64encode(new_content.encode()).decode()
