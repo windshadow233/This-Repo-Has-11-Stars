@@ -9,5 +9,6 @@
 
 | No. | Avatar | Username | Starred At |
 | :---: | :---: | :---: | :---: |
+| 2 | <img src='https://avatars.githubusercontent.com/u/50669888?v=4' width='50'> | windshadow233 | 2024-02-24T17:50:45Z |
 | 1 | <img src='https://avatars.githubusercontent.com/u/147902813?v=4' width='50'> | cjwsjtu | 2024-02-24T07:44:34Z |
 | 0 | <img src='https://avatars.githubusercontent.com/u/34061588?v=4' width='50'> | May24th | 2024-02-24T04:33:35Z |
