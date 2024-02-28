@@ -46,12 +46,11 @@ def lambda_handler(event, context):
         res = requests.get(readme_url, headers=headers)
         sha = res.json()['sha']
         content = base64.b64decode(res.json()['content']).decode()
-        lines = content.split('\n\n')[:3]
+        lines = content.split('\n\n')[:4]
         lines[0] = f"# It's True 💗 This Repo Has {stars} Star{'s' if stars != 1 else ''}!"
         # Update stargazers
         stargazers_url = repository_url + "/stargazers"
         res = requests.get(stargazers_url, headers={'Accept': 'application/vnd.github.v3.star+json', 'Authorization': f"Bearer {GITHUB_TOKEN}"}).json()
-        lines.append("下表记录了Star了此Repo的用户们:")
         table = "| No. | Avatar | Username | Starred At |\n" \
                 "| :---: | :---: | :---: | :---: |"
         for i, info in enumerate(res):
