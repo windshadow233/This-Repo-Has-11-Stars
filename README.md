@@ -1,4 +1,4 @@
-# It's True 💗 This Repo Has 7 Stars!
+# It's True 💗 This Repo Has 8 Stars!
 
 很早以前看到过@iBug大佬的[一个Repo](https://github.com/iBug/This-Repo-Has-572-Stars)，当时觉得真有趣，但没仔细学习。今天偶然想起，于是拜读了一下[ibug.io/p/41](https://ibug.io/p/41)，
 并复现了一个出来。
@@ -16,3 +16,4 @@
 | 4 | <img src='https://avatars.githubusercontent.com/u/133310640?v=4' width='50'> | luolahou | 2024-02-27T14:02:41Z |
 | 5 | <img src='https://avatars.githubusercontent.com/u/57201828?v=4' width='50'> | Roythuly | 2024-02-28T13:38:34Z |
 | 6 | <img src='https://avatars.githubusercontent.com/u/1885663?v=4' width='50'> | leemcd56 | 2024-02-28T17:09:23Z |
+| 7 | <img src='https://avatars.githubusercontent.com/u/44392324?v=4' width='50'> | Camille7777 | 2024-02-29T04:46:30Z |
