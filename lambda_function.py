@@ -55,7 +55,7 @@ def lambda_handler(event, context):
                 "| :---: | :---: | :---: | :---: |"
         for i, info in enumerate(res):
             user = info['user']
-            table += f"\n| {i} | <img src='{user['avatar_url']}' width='50'> | {user['login']} | {info['starred_at']} |"
+            table += f"\n| {i} | <img src='{user['avatar_url']}' width='50'> | [{user['login']}]({user['html_url']}) | {info['starred_at']} |"
         lines.append(table)
         new_content = '\n\n'.join(lines)
         encoded_content = base64.b64encode(new_content.encode()).decode()
