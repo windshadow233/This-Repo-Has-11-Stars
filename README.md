@@ -1,4 +1,4 @@
-# It's True 💗 This Repo Has 10 Stars!
+# It's True 💗 This Repo Has 9 Stars!
 
 很早以前看到过@iBug大佬的[一个Repo](https://github.com/iBug/This-Repo-Has-572-Stars)，当时觉得真有趣，但没仔细学习。今天偶然想起，于是拜读了一下[ibug.io/p/41](https://ibug.io/p/41)，
 并复现了一个出来。
@@ -18,4 +18,3 @@
 | 6 | <img src='https://avatars.githubusercontent.com/u/1885663?v=4' width='50'> | [leemcd56](https://github.com/leemcd56) | 2024-02-28T17:09:23Z |
 | 7 | <img src='https://avatars.githubusercontent.com/u/44392324?v=4' width='50'> | [Camille7777](https://github.com/Camille7777) | 2024-02-29T04:46:30Z |
 | 8 | <img src='https://avatars.githubusercontent.com/u/39520803?v=4' width='50'> | [Ntimesp](https://github.com/Ntimesp) | 2024-03-01T08:01:18Z |
-| 9 | <img src='https://avatars.githubusercontent.com/u/8213913?v=4' width='50'> | [binbjz](https://github.com/binbjz) | 2024-03-03T09:34:01Z |
